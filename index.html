@@ -43,10 +43,10 @@
             <ul class="navbar-nav me-auto pt-2 pt-lg-0 font-base">
               <li class="nav-item px-2 ms-5" data-anchor="data-anchor"><a class="nav-link" href="#home">Home</a></li>
               <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link" href="#aboutme">About Me</a></li>
-              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link" href="#service">Skills</a></li>
+              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link" href="#skill">Skills</a></li>
              
-              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link" href="#testimonial">Projects</a></li>
-              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link" href="#feature">Gallery</a></li>
+              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link" href="#project">Projects</a></li>
+              <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link" href="#gallery">Gallery</a></li>
               <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link" href="#testimonial1">Review</a></li>
               <li class="nav-item px-2" data-anchor="data-anchor"><a class="nav-link" href="#contact">Contact Me</a></li>
             </ul>
@@ -54,30 +54,24 @@
           </div>
         </div>
       </nav>
-      <section class="position-relative min-vh-100 d-flex flex-column text-center text-md-start"id="home">
+      <section id="home">
+        <div class="bg-holder d-none d-md-block bg-size" style="background-image:url(public/assets/img/illustrations/hero.png);background-position:right bottom;">
+        </div>
+        <!--/.bg-holder-->
+
         <div class="bg-holder" style="background-image:url(public/assets/img/illustrations/heroheader-bg.png);background-position:center;background-size:contain;">
         </div>
-        <div class="bg-holder" style="background-image:url(public/assets/img/illustrations/product-bg-1.png);background-position:center;background-size:cover;">
-        </div>
-        <div class="bg-holder" style="background-image:url(public/assets/img/illustrations/service.png);background-position:center;background-size:cover;">
-        </div>
-         
-          <!-- Upper Content Section: Welcome Message -->
-          <div class="container mt-3 position-relative z-1 text-center"> <!-- Reduced margin -->
-            <h1 class="fw-bold fs-3 fs-lg-5 text-gradient">Welcome to My Portfolio</h1>
-            <p class="fw-bold mt-3 fs-4 "><span class="text-primary">Tech</span><span style="color: #6f42c1; ">Ninja</span></p>
+        <!--/.bg-holder-->
 
-            <p class="mb-3 fs-2 fst-italic text-primary">Mastering Code, One Line at a Time.</p>
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-7 col-lg-6 py-6 text-sm-start text-center">
+              <h1 class="fw-bold display-4 fs-4"> Welcome to my portfolio </h1>
+              <p class="fw-bold mt-3 fs-4 "><span class="text-primary">Tech</span><span style="color: #6f42c1; ">Ninja</span></p>
+              <p class=" fs-1"> From Concept to Code </p><p class="fs-1"> Let's Build Something Amazing!</p><br class="d-none d-lg-block" />
+            </div>
           </div>
-        
-          <!-- Image Section -->
-          
-        
-          <!-- Background Image at Bottom -->
-          <div class="d-flex justify-content-center">
-            <img src="public/assets/img/gallery/ho.png" alt="Background" class="img-fluid" style="width: 60%; height: auto; max-height: 380px;">
-          </div>
-        
+        </div>
       </section> 
         
         
@@ -142,7 +136,7 @@
       <!-- ============================================-->
 
 
-      <section class="py-5 circle-blend circle-blend-right-feature circle-cyan" id="service">
+      <section class="py-5 circle-blend circle-blend-right-feature circle-cyan" id="skill">
         <div class="bg-holder" style="background-image:url(public/assets/img/illustrations/feature-bg.png);background-position:right;background-size:auto;">
         </div>
          
@@ -153,18 +147,16 @@
         <!--/.bg-holder-->
 
         <div class="container">
-          <div class="row justify-content-center mb-6">
-            <div class="col-lg-6 text-center mx-auto mb-3 mb-md-5 mt-4">
-              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">NinjaCodex</h5>
-              <p class="mb-0"> Welcome to NinjaCodex, the secret scroll of my technical expertise and development skills. This is where raw coding power meets precision, blending creativity with technology.</p>
+          <div class="row justify-content-center">
+            <div class=" text-center mx-auto mb-3 mb-md-5 mt-4">
+              <h2 class="fw-bold display-9 lh-sm my-4 text-nowrap text-center">Programming Languages & Technologies</h2>
+               
             </div>
-            <h2 class="fw-bold display-9 lh-sm my-4">🖥 Programming Languages & Technologies</h2>
-          </div>
           <div class="row circle-blend circle-blend-left-feature circle-primary">
             <div class="col-md-4 mb-6">
               <div class="text-center px-lg-3">
-                <div class="icon-wrapper shadow-danger">
-                  <img src="public/assets/img/gallery/logow.png" alt="Logo" width="100" height="100">
+                <div class="icon-wra pper shadow-danger">
+                  <img src="public/assets/img/gallery/python_image.png" alt="Logo" width="100" height="100">
                 </div>
                 <h5 class="mt-3 fw-bold">Python</h5>
                 <p class="mb-md-0 px-xxl-6">Beginner</p>
@@ -172,7 +164,7 @@
             </div>
             <div class="col-md-4 mb-6">
               <div class="text-center px-lg-3">
-                <div class="icon-wrapper shadow-primary">
+                <div class="icon-wra pper shadow-primary">
                   <img src="public/assets/img/gallery/c.png" alt="Logo"  width="100" height="100" >
                 </div>
                 <h5 class="mt-3 fw-bold">C</h5>
@@ -218,39 +210,63 @@
           </div>
         </div>
         <div class="container">
-           
           <div class="row circle-blend circle-blend-left-feature circle-primary">
             <div class="col-md-4 mb-6">
               <div class="text-center px-lg-3">
-                <div class="icon-wrap per shadow-danger">
+                <div class="icon-wra pper shadow-danger">
                   <img src="public/assets/img/gallery/sql.png" alt="Logo" width="100" height="100">
                 </div>
-                <h5 class="mt-3 fw-bold">MySQL</h5>
+                <h5 class="mt-3 fw-bold"> SQL</h5>
                 <p class="mb-md-0 px-xxl-6">Beginner</p>
               </div>
             </div>
             <div class="col-md-4 mb-6">
               <div class="text-center px-lg-3">
-                <div class="icon-wrapper shadow-primary">
+                <div class="icon-wra pper shadow-primary">
                   <img src="public/assets/img/gallery/spline.webp" alt="Logo"  width="100" height="100" >
                 </div>
                 <h5 class="mt-3 fw-bold">Spline 3D</h5>
                 <p class="mb-md-0 px-xxl-6">Beginner</p>
               </div>
             </div>
-             
+            <div class="col-md-4 mb-6">
+              <div class="text-center px-lg-3">
+                <div class="icon-wrapper sha dow-warning">
+                  <img src="public/assets/img/gallery/hacker.png" alt="Logo"  width="100" height="100" >
+                </div>
+                <h5 class="mt-3 fw-bold">HackerRank</h5>
+                <p class="mb-md-0 px-xxl-6">Beginner</p>
+              </div>
             </div>
+            <div class="col-md-4 mb-6">
+              <div class="text-center px-lg-3">
+                <div class="icon-wrapper shadow-sucxcess">
+                  <img src="public/assets/img/gallery/git1.png" alt="Logo"  width="100" height="100" >
+                </div>
+                <h5 class="mt-3 fw-bold">Github</h5>
+                <p class="mb-md-0 px-xxl-6">Beginner</p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-6">
+              <div class="text-center px-lg-3">
+                <div class="icon-wrapper shadow-sucxcess">
+                  <img src="public/assets/img/gallery/postman.png" alt="Logo"  width="100" height="100" >
+                </div>
+                <h5 class="mt-3 fw-bold">Postman</h5>
+                <p class="mb-md-0 px-xxl-6">Beginner</p>
+              </div>
+            </div>
+            
           </div>
         </div>
       </section>
       <section class="py-0 circle-blend circle-blend-right circle-warning" id="service">
 
         <div class="container">
-          <div class="row">
+          <div class=" text-center mx-auto mb-3 mb-md-5 mt-4">
+            <h2 class="fw-bold display-9 lh-sm my-4 text-nowrap text-center">Framework& Libraries</h2>
              
-               <h2 class="fw-bold display-9 lh-sm my-4">🚀Frameworks & Libraries</h2>
           </div>
-          <div class="bg-holder" style="background-image:url(public/assets/img/illustrations/service.png);background-position:bottom center;background-size:contain;">
           </div>
           <!--/.bg-holder-->
 
@@ -260,7 +276,7 @@
                 <div class="col-md-4 mb-4">
                   <div class="card card-bg custom-card px-4 px-md-2 px-lg-3 px-xxl-4 pt-3">
                     <div class="text-center">
-                      <img class="my-3" src="public/assets/img/illustrations/fra.png" width="50" alt="services" />
+                      <img class="my-3" src="public/assets/img/gallery/rest.png" width="55" alt="services" />
                       <div class="card-body text-center text-md-start">
                         <h6 class="fw-bold fs-1">Django</h6>
                         <p class="mt-2 mb-2">Web development with power and security</p>
@@ -296,61 +312,8 @@
           </div>
         </div>
         <!-- end of .container-->
-      </section>
-      <section class="py-5 circle-blend circle-blend-right-feature circle-cyan"  >
-        <div class="bg-holder" style="background-image:url(public/assets/img/illustrations/feature-bg.png);background-position:right;background-size:auto;">
-        </div>
-        <div class="bg-holder" style="background-image:url(public/assets/img/illustrations/heroheader-bg.png);background-position:center;background-size:contain;">
-        </div>
-        <!--/.bg-holder-->
-
-        <div class="container">
-          <div class="row justify-content-center mb-6">
-            <div class="col-lg-6 text-center mx-auto mb-3 mb-md-5 mt-4">
-               
-
-
-               
-
-               
-            </div>
-            <h2 class="fw-bold display-9 lh-sm my-4">⚔️ The Tech Armory – My Developer Toolkit 🛠️</h2>
-          </div>
-          <div class="row circle-blend circle-blend-left-feature circle-primary">
-            <div class="col-md-4 mb-6">
-              <div class="text-center px-lg-3">
-                <div class="icon-wrapper1 shadow-danger">
-                  <img src="public/assets/img/gallery/git.png" alt="Logo" class="icon-img1">
-                </div>
-                <h5 class="mt-3 fw-bold">Git Hub</h5>
-                 
-              </div>
-            </div>
-            <div class="col-md-4 mb-6">
-              <div class="text-center px-lg-3">
-                <div class="icon-wrapper1 shadow-danger">
-                  <img src="public/assets/img/gallery/vs23.png" alt="Logo" class="icon-img1">
-                </div>
-                <h5 class="mt-3 fw-bold">VS Code</h5>
-                
-              </div>
-            </div>
-            <div class="col-md-4 mb-6">
-              <div class="text-center px-lg-3">
-                <div class="icon-wrapper1 shadow-danger">
-                  <img src="public/assets/img/gallery/hacker1.png" alt="Logo" class="icon-img1">
-                </div>
-                <h5 class="mt-3 fw-bold">HackerRank</h5>
-                 
-              </div>
-            </div>
-            
-             
-             
-          </div>
-        </div>
-      </section>
-      <section id="testimonial">
+       
+      <section id="project">
         <div class="bg-holder" style="background-image:url(public/assets/img/illustrations/product-bg-1.png);background-position:center;background-size:cover;">
         </div>
         <!--/.bg-holder-->
@@ -372,7 +335,7 @@
               <h1 class="fw-bold display-5 lh-sm my-4">LEARNEX-Learning Made Fun, Growth Made Easy!</h1>
               <p class="fs-1 mb-3 pe-xxl-8"> Welcome to the Projects section of Learnex, where education meets innovation. Our gamified learning platform is designed to make education an exciting adventure for young minds.</p>
               <p class="fs-1 mb-5 pe-xxl-8">Dive into our creative projects that blend fun and knowledge seamlessly, ensuring an engaging learning experience for students from 1st to 5th standard.</p>
-              <button class="btn btn-lg btn-klean-outline order-0" type="submit"><span class="fw-bold text-gradient">Read More</span></button>
+               
             </div>
           </div>
           <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
@@ -387,7 +350,7 @@
               <h1 class="fw-bold display-5 lh-sm my-4">AlgoSys-Crack the Code, Master the Logic!</h1>
               <p class="fs-1 mb-3 pe-xxl-8"> Welcome to the Projects section of AlgoSys, where coding meets clarity. Our platform is designed to simplify the complexities of Data Structures and Algorithms, making them accessible and engaging for aspiring programmers. </p>
               <p class="fs-1 mb-5 pe-xxl-8">Whether you’re a beginner or preparing for competitive coding, our interactive approach ensures you learn, practice, and master DSA with confidence.</p>
-              <button class="btn btn-lg btn-klean-outline order-0" type="submit"><span class="fw-bold text-gradient">Read More</span></button>
+             
             </div>
           </div>
         </div>
@@ -415,7 +378,7 @@
               <p class="fs-1 mb-3 pe-xxl-8">Welcome to ElectroCart – Where Innovation Meets Convenience!
                 Discover the future of technology at ElectroCart, your one-stop shop for the latest and greatest in electronics. Whether you’re a tech enthusiast or just looking to upgrade your gadgets, we’ve got everything you need to stay ahead in the digital age.</p>
               <p class="fs-1 mb-5 pe-xxl-8">  From cutting-edge smartphones to high-performance laptops, smart home devices to gaming gear – find it all here!</p>
-              <button class="btn btn-lg btn-klean-outline order-0" type="submit"><span class="fw-bold text-gradient">Read More</span></button>
+             
             </div>
           </div>
           <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
@@ -431,7 +394,7 @@
               <p class="fs-1 mb-3 pe-xxl-8"> Welcome to Sinhgad Hackathon – Unleash Your Potential!
                 Are you ready to challenge the ordinary and create the extraordinary? Join us at the Sinhgad Hackathon – the ultimate platform for innovators, coders, and problem solvers!</p>
               <p class="fs-1 mb-5 pe-xxl-8"> Whether you're a newbie looking to learn or a pro ready to compete, this is your chance to showcase your skills, collaborate with brilliant minds, and bring your ideas to life.</p>
-              <button class="btn btn-lg btn-klean-outline order-0" type="submit"><span class="fw-bold text-gradient">Read More</span></button>
+              
             </div>
           </div>
         </div>
@@ -459,7 +422,7 @@
               <p class="fs-1 mb-3 pe-xxl-8"> Welcome to TechNinja!
                 Where creativity meets code, and ideas turn into impactful digital experiences. I’m an Electronics and Telecommunication Engineer with a passion for crafting innovative solutions. </p>
               <p class="fs-1 mb-5 pe-xxl-8">  </p>
-              <button class="btn btn-lg btn-klean-outline order-0" type="submit"><span class="fw-bold text-gradient">Read More</span></button>
+             
             </div>
           </div>
            
@@ -469,7 +432,7 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-        <section class="py-7" id="feature">
+        <section class="py-7" id="gallery">
           <div class="container">
             <div class="bg-holder" style="background-image:url(public/assets/img/illustrations/project-bg.png);background-position:right;background-size:auto;">
             </div>
@@ -485,49 +448,122 @@
                 <div class="card project-card-bg mx-auto px-0">
                   <div class="card-body">
                     <div class="row align-items-center">
-                      <!-- Gallery Images -->
-                      <div class="col-12 col-md-6 col-lg-4 text-center">
-                        <img class="gallery-img img-fluid px-xl-0" src="public/assets/img/gallery/gallery1.jpg" alt="project" data-index="0"/>
-                        <img class="gallery-img img-fluid px-xl-0" src="public/assets/img/gallery/gallery2.jpg" alt="project" data-index="1"/>
-                      </div>
-                      <div class="col-12 col-md-6 col-lg-4 text-center">
-                        <img class="gallery-img img-fluid px-xl-0" src="public/assets/img/gallery/grp3.jpg" alt="project" data-index="2"/>
-                        <img class="gallery-img img-fluid px-xl-0" src="public/assets/img/gallery/grp5.jpg" alt="project" data-index="3"/>
-                      </div>
-                      <div class="col-12 col-md-6 col-lg-4 text-center">
-                        <img class="gallery-img img-fluid px-xl-0" src="public/assets/img/gallery/first.jpg" alt="project" data-index="4"/>
-                        <img class="gallery-img img-fluid px-xl-0" src="public/assets/img/gallery/grp4.jpg" alt="project" data-index="5"/>
-                      </div>
+                        <!-- Gallery Images -->
+                        <div class="col-12 col-md-6 col-lg-4 text-center">
+                            <img class="gallery-img img-fluid mb-4" src="public/assets/img/gallery/gallery1.jpg" alt="project" data-index="0"/>
+                            <img class="gallery-img img-fluid" src="public/assets/img/gallery/gallery2.jpg" alt="project" data-index="1"/>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 text-center">
+                            <img class="gallery-img img-fluid mb-4" src="public/assets/img/gallery/grp3.jpg" alt="project" data-index="2"/>
+                            <img class="gallery-img img-fluid" src="public/assets/img/gallery/grp5.jpg" alt="project" data-index="3"/>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 text-center">
+                            <img class="gallery-img img-fluid mb-4" src="public/assets/img/gallery/first.jpg" alt="project" data-index="4"/>
+                            <img class="gallery-img img-fluid" src="public/assets/img/gallery/grp4.jpg" alt="project" data-index="5"/>
+                        </div>
                     </div>
+                </div>
+                
+                  
                   </div>
                 </div>
               </div>
             </div>
         
             <!-- View More Button -->
-            <div class="row">
-              <div class="col-auto mx-auto mt-6">
-                <button class="btn btn-lg btn-klean-outline order-0" type="button"><span class="text-gradient fw-bold">View More</span></button>
-              </div>
-            </div>
+            
           </div>
         </section>
+        <style>
+          /* Ensure all gallery images have the same size */
+.gallery-img, .popup-img {
+    width: 100%; /* Makes all images fill their container */
+    height: 250px; /* Ensures uniform height */
+    object-fit: cover; /* Keeps images proportionate */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+/* Ensure spacing between images */
+.gallery-img {
+    margin-bottom: 15px; /* Adds space between vertical images */
+}
+
+/* Center modal image & match gallery size */
+.popup-img {
+    max-width: 100%;
+    max-height: 250px; /* Matches gallery image height */
+}
+/* Center the Contact Us section */
+.contact-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 50px; /* Space between form and contact details */
+}
+
+/* Ensure both form and contact details take equal space */
+.contact-form, .contact-details {
+    flex: 1; 
+    max-width: 500px; /* Prevents them from being too wide */
+}
+.custom-btn {
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+    color: white;
+  }
+
+  .custom-btn:hover {
+    background-color: #5a32a3; /* Darker shade for hover effect */
+    border-color: #5a32a3;
+  }
+/* Ensure the form is centered inside its card */
+.card.card-bg {
+    width: 100%;
+    text-align: center;
+}
+
+.bg-holder1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center !important; /* Centers the image */
+    background-size: cover !important; /* Ensures it covers the section */
+    z-index: -1; /* Moves it behind content */
+}
+
+
+
+
+        </style>
         
-        <!-- Lightbox Modal -->
-        <div id="imageModal" class="modal fade" tabindex="-1">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-body text-center">
-                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"></button>
-                <img id="modalImage" class="img-fluid" src="" alt="Expanded Image">
-                <div class="mt-3">
-                  <button id="prevBtn" class="btn btn-lg btn-klean-outline order-0">← Previous</button>
-                  <button id="nextBtn" class="btn btn-lg btn-klean-outline order-0">Next →</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+       <!-- Bootstrap Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="modalImage" class="popup-img img-fluid" alt="popup image">
+      </div>
+      <div class="modal-footer d-flex justify-content-between">
+        <button id="prevBtn" class="btn custom-btn">
+          <i class="fas fa-arrow-left"></i>
+        </button>
+        <button id="nextBtn" class="btn custom-btn">
+          <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+      
+      <!-- Add Font Awesome CDN in your HTML head if not included -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      
+    </div>
+  </div>
+</div>
+
         
         <!-- Bootstrap JS & jQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -701,30 +737,28 @@
 
 
       <section class="py-5 mb-8">
-        <div class="bg-holder" style="background-image:url(public/assets/img/illustrations/contact-us-bg.png);background-position:left bottom;background-size:auto;">
+        <div class="bg-holder1" style="background-image:url(public/assets/img/illustrations/contact-us-bg.png);background-position:left bottom;background-size:auto;">
         </div>
-        <div class="bg-holder" style="background-image:url(public/assets/img/gallery/contact-bg.png);background-position:center right ;background-size:contain;">
+        <div class="bg-holder1" style="background-image:url(public/assets/img/gallery/contact-bg.png);background-position:center right ;background-size:contain;">
         </div>
-        <div class="container">
-          <div class="row flex-center">
-            <div class="col-lg-5 mb-5">
+        <div class="container mt-3">
+          <div class="row contact-us-container">
+            <!-- Contact Form -->
+            <div class="contact-form">
               <div class="card card-bg p-2">
                 <div class="card-body">
                   <form id="contact-form">
                     <div class="row mb-3 input-group-icon">
-                      <label class="col-sm-2 col-form-label visually-hidden" for="inputName">Name</label>
                       <div class="col-sm-12">
                         <input class="form-control rounded-pill border-white input-box" id="inputName" name="user_name" type="text" placeholder="Write your name" required />
                       </div>
                     </div>
                     <div class="row mb-3 input-group-icon">
-                      <label class="col-sm-2 col-form-label visually-hidden" for="inputEmail3">Email</label>
                       <div class="col-sm-12">
                         <input class="form-control rounded-pill border-white input-box" id="inputEmail3" name="user_email" type="email" placeholder="Write your email" required />
                       </div>
                     </div>
                     <div class="row mb-3 input-group-text-icon">
-                      <label class="col-sm-2 col-form-label visually-hidden" for="floatingTextarea2">Comments</label>
                       <div class="col-sm-12">
                         <textarea class="form-control rounded-3 border-white input-box" id="floatingTextarea2" name="message" placeholder="Write your message" style="height: 150px" required></textarea>
                       </div>
@@ -740,47 +774,44 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-5 offset-lg-1">
-              <!-- Social Media Buttons -->
-              <div class="d-flex justify-content-between align-items-start">
-                <!-- Left Side: Email, Phone, and Location -->
-                <div>
-                  <div class="d-flex align-items-center mb-4">
-                    <a href="tel:9545440779" class="icon icon-primary">
-                      <span data-feather="phone"></span>
-                    </a>
-                    <div class="flex-1 ms-3">
-                      <p class="fw-bold mb-0">Phone</p>
-                      <p>9545440779</p>
-                    </div>
-                  </div>
-            
-                  <div class="d-flex align-items-center mb-4">
-                    <a href="mailto:chavanshital3108@gmail.com" class="icon icon-primary">
-                      <span data-feather="mail"></span>
-                    </a>
-                    <div class="flex-1 ms-3">
-                      <p class="fw-bold mb-0">Email</p>
-                      <p>chavanshital3108@gmail.com</p>
-                    </div>
-                  </div>
-            
-                  <div class="d-flex align-items-center">
-                    <a href="https://www.google.com/maps/search/?api=1&query=SKN+Sinhgad+College+of+Engineering+Korti+Pandharpur" target="_blank" class="icon icon-primary">
-                      <span data-feather="map-pin"></span>
-                    </a>
-                    <div class="flex-1 ms-3">
-                      <p class="fw-bold mb-0">Location</p>
-                      <p>SKN Sinhgad College of Engineering Korti, Pandharpur</p>
-                    </div>
+        
+            <!-- Contact Details -->
+            <div class="contact-details">
+              <div class="d-flex flex-column">
+                <div class="d-flex align-items-center mb-4">
+                  <a href="tel:9545440779" class="icon icon-primary">
+                    <span data-feather="phone"></span>
+                  </a>
+                  <div class="ms-3">
+                    <p class="fw-bold mb-0">Phone</p>
+                    <p>9545440779</p>
                   </div>
                 </div>
-                <!-- Right Side: Social Media Icons -->
+        
+                <div class="d-flex align-items-center mb-4">
+                  <a href="mailto:chavanshital3108@gmail.com" class="icon icon-primary">
+                    <span data-feather="mail"></span>
+                  </a>
+                  <div class="ms-3">
+                    <p class="fw-bold mb-0">Email</p>
+                    <p>chavanshital3108@gmail.com</p>
+                  </div>
+                </div>
+        
+                <div class="d-flex align-items-center">
+                  <a href="https://www.google.com/maps/search/?api=1&query=SKN+Sinhgad+College+of+Engineering+Korti+Pandharpur" target="_blank" class="icon icon-primary">
+                    <span data-feather="map-pin"></span>
+                  </a>
+                  <div class="ms-3">
+                    <p class="fw-bold mb-0">Location</p>
+                    <p>SKN Sinhgad College of Engineering Korti, Pandharpur</p>
+                  </div>
+                </div>
               </div>
             </div>
-            
-          
+          </div>
         </div>
+        
           
       </section>
  
@@ -828,7 +859,25 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
+.scroll-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #6f42c1;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    display: none; /* Hidden by default */
+  }
 
+  .scroll-btn:hover {
+    background-color: #5a32a3;
+  }
 
         /* From Uiverse.io by david-mohseni */ 
 .wrapper {
@@ -936,7 +985,7 @@
     </div>
 
     <!-- Social Media Icons -->
-    <div style="margin-bottom: px;">
+    <div style="margin-bottom: 10px;">
         <a href="https://www.linkedin.com/feed/" target="_blank" style="margin: 0 10px; color: #0077b5; font-size: 24px;">
             <i class="fab fa-linkedin"></i>
         </a>
@@ -948,9 +997,37 @@
         </a>
     </div>
 
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="btn scroll-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <!-- Footer Text -->
     <p style="margin-top: 5px; font-size: 18px;">Made with ❤️ by Shital</p>
 </section>
+
+<!-- Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+<!-- JavaScript for Smooth Scroll to Top -->
+<script>
+  // Show button when scrolling down
+  window.onscroll = function() {
+    let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  };
+
+  // Scroll to top when clicked
+  document.getElementById("scrollToTopBtn").addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
 
 <!-- FontAwesome Icons (Make sure you include this in your HTML) -->
  
