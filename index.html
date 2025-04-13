@@ -94,14 +94,14 @@
               
                 <h1 class="display-6 mb-3">Who I Am?</h1>
                 <div class="fs-1 mb-3 pe-xxl-8"> 
-                <p>Hello Everyone, I am <b>Shital Sahebrao Chavan</b>, and I am from Atpadi, currently pursuing a B.Tech in Electronics and Telecommunication Engineering from SKN Singhad College of Engineering, Korti Pandharpur. I am a self-motivated, quick learner with strong time management skills. However, I do tend to become restless until I complete my work.</p>
+                <p>Hello Everyone, I am <b>Shital Sahebrao Chavan</b>, from Atpadi, currently pursuing a B.Tech in Electronics and Telecommunication Engineering from SKN Singhad College of Engineering, Korti Pandharpur. I am a self-motivated, quick learner with strong time management skills. However, I do tend to become restless until I complete my work.</p>
                 <p>I have solid knowledge of C programming and am learning Python and web development, particularly HTML, CSS, and JavaScript. In my free time, I enjoy reading motivational books, watching historical movies, and listening to music.</p>
             </div>
                 <!-- Resume Button -->
                  <div>
                   
-                    <a href="shital_resume.pdf" target="_blank" class="btn btn-lg btn-klean-outline order-0">
-                      <span class="fw-bold text-gradient">Resume</span>
+                    <a href="shital_resume.pdf" target="_blank" class="btn hover-top btn-glow btn-klean rounded-pill">
+                      <span class="fw-bold coders:white">Resume</span>
                     </a>
                   </div>    
             </div>
@@ -446,7 +446,9 @@
     object-fit: cover; /* Keeps images proportionate */
     border-radius: 10px; /* Optional: Adds rounded corners */
 }
-
+.custom-btn i {
+  color: white; /* Ensures arrow icons are white */
+}
 /* Ensure spacing between images */
 .gallery-img {
     margin-bottom: 15px; /* Adds space between vertical images */
@@ -471,16 +473,7 @@
     flex: 1; 
     max-width: 500px; /* Prevents them from being too wide */
 }
-.custom-btn {
-    background-color: #6f42c1;
-    border-color: #6f42c1;
-    color: white;
-  }
-
-  .custom-btn:hover {
-    background-color: #5a32a3; /* Darker shade for hover effect */
-    border-color: #5a32a3;
-  }
+ 
 /* Ensure the form is centered inside its card */
 .card.card-bg {
     width: 100%;
@@ -509,10 +502,11 @@
         <img id="modalImage" class="popup-img img-fluid" alt="popup image">
       </div>
       <div class="modal-footer d-flex justify-content-between">
-        <button id="prevBtn" class="btn custom-btn">
+        <button id="prevBtn" class="btn hover-top btn-glow btn-klean rounded-pill">
+          
           <i class="fas fa-arrow-left"></i>
         </button>
-        <button id="nextBtn" class="btn custom-btn">
+        <button id="nextBtn" class="btn hover-top btn-glow btn-klean rounded-pill">
           <i class="fas fa-arrow-right"></i>
         </button>
       </div>
@@ -573,87 +567,239 @@
           <div class="row">
             <div class="col-lg-6 mx-auto text-center mb-6">
               <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">See What They’re Saying!</h5>
-              <p class="mb-0">  </div>
+              <p class="mb-0"></p>
+            </div>
           </div>
+        
           <div class="row flex-center h-100 circle-blend circle-blend-left circle-pink" style="z-index:1;">
             <div class="col-xl-11 circle-blend circle-blend-right circle-cyan">
               <div class="carousel slide" id="carouselTestimonials" data-bs-ride="carousel">
                 <div class="carousel-inner ps-sm-7 pb-sm-7 ps-md-5 ps-lg-7 pb-lg-7">
+        
+                  <!-- Testimonial 1 -->
                   <div class="carousel-item active" data-bs-interval="10000">
                     <div class="row h-100 align-items-center">
                       <div class="col-auto">
                         <div class="wrapper shadow-square-left-bottom">
                           <div class="card testimonial-card-bg h-100">
-                            <div class="card-body h-100 p-4"><img class="border-klean-gradient" src="public/assets/img/gallery/Disha.jpg" alt="testimonials" width="315" /></div>
+                            <div class="card-body h-100 p-4">
+                              <img class="border-klean-gradient" src="public/assets/img/gallery/Dishadi.jpg" alt="Disha" width="315" />
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-5 col-lg-6 col-xl-7 mb-4 ms-xxl-auto"><img class="img-fluid" src="public/assets/img/gallery/quotation.png" alt="testimonials-bg" />
-                         
-                        <p class="mt-4 pe-xxl-8"> A determined and hardworking professional who never backs down from challenges. She embraces difficult technologies, learns them thoroughly, and ensures exceptional results. Her adaptability across different technical domains, whether in electronics or software development, showcases her versatility.
-                        </p>
-                        <div class="my-4">
- 
-                        </div>
-                        <h6 class="fw-bold fs-lg-1">Miss Disha Honmane </h6>
+                      <div class="col-md-5 col-lg-6 col-xl-7 mb-4 ms-xxl-auto">
+                        <img class="img-fluid" src="public/assets/img/gallery/quotation.png" alt="quote" />
+                        <p class="mt-4 pe-xxl-8"> A determined and hardworking professional who never backs down from challenges. She embraces difficult technologies, learns them thoroughly, and ensures exceptional results. Her adaptability across different technical domains, whether in electronics or software development, showcases her versatility</p>
+                        <h6 class="fw-bold fs-lg-1">Miss Disha Honmane</h6>
                         <h5 class="ms-2 fw-normal text-400 fs--1">Data Analyst @MMJS Dataphi</h5>
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item" data-bs-interval="5000">
+        
+                  <!-- Testimonial 2 -->
+                  <div class="carousel-item" data-bs-interval="2000">
                     <div class="row h-100 align-items-center">
                       <div class="col-auto">
                         <div class="wrapper shadow-square-left-bottom">
                           <div class="card testimonial-card-bg h-100">
-                            <div class="card-body h-100 p-4"><img class="border-klean-gradient" src="public/assets/img/gallery/utpad mam.png" alt="testimonials" width="315" /></div>
+                            <div class="card-body h-100 p-4">
+                              <img class="border-klean-gradient" src="public/assets/img/gallery/utpad mam.png" alt="Utpat Mam" width="300" />
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-5 col-lg-6 col-xl-7 mb-4 ms-xxl-auto"><img class="img-fluid" src="public/assets/img/gallery/quotation.png" alt="testimonials-bg" />
- 
-                        <p class="mt-4 pe-xxl-8">I just wanted to drop you a little email to say thank you for all your hard work. I'm delighted I chose you as my partner. Your websites are quite simple to edit and maintain, which is fantastic.</p>
-                     
-                        <h6 class="fw-bold fs-lg-1">Prof. Vaishnavi Utpat  </h6>
-                        <h5 class="ms-2 fw-normal text-400 fs--1"> Professor @SKNSCOE</h5>
+                      <div class="col-md-5 col-lg-6 col-xl-7 mb-4 ms-xxl-auto">
+                        <img class="img-fluid" src="public/assets/img/gallery/quotation.png" alt="quote" />
+                        <p class="mt-4 pe-xxl-8">It is a great pleasure to write a few words of appreciation for Shital. Throughout her academic journey, she is consistently demonstrating an exceptional level of sincerity, dedication, and a strong work ethic. Her ability to grasp complex concepts, coupled with her persistent efforts to excel, sets her apart as a truly outstanding student.
+                          Shital has always approached her studies with great enthusiasm and responsibility. Whether working on academic tasks, practical projects, or team collaborations, she exhibits maturity, discipline, and a genuine eagerness to learn and improve. Her passion for the subject and her proactive attitude make her a role model for her peers.
+                          I am confident that her commitment and positive attitude will continue to lead her to greater achievements in the future. I wholeheartedly recommend her and wish her the very best in all her future endeavors.</p>
+                        <h6 class="fw-bold fs-lg-1">Prof. Vaishnavi Utpat</h6>
+                        <h5 class="ms-2 fw-normal text-400 fs--1">Professor @SKNSCOE</h5>
                       </div>
                     </div>
                   </div>
+        
+                  <!-- Testimonial 3 -->
                   <div class="carousel-item" data-bs-interval="3000">
                     <div class="row h-100 align-items-center">
                       <div class="col-auto">
                         <div class="wrapper shadow-square-left-bottom">
                           <div class="card testimonial-card-bg h-100">
-                            <div class="card-body h-100 p-4"><img class="border-klean-gradient" src="public/assets/img/gallery/testimonial.png" alt="testimonials" width="315" /></div>
+                            <div class="card-body h-100 p-4">
+                              <img class="border-klean-gradient" src="public/assets/img/gallery/karchemam.jpg" alt="testimonial" width="315" />
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-5 col-lg-6 col-xl-7 mb-4 ms-xxl-auto"><img class="img-fluid" src="public/assets/img/gallery/quotation.png" alt="testimonials-bg" />
-                        
-                        <p class="mt-4 pe-xxl-8">I just wanted to drop you a little email to say thank you for all your hard work. I'm delighted I chose you as my partner. Your websites are quite simple to edit and maintain, which is fantastic.</p>
-                         
-                        <h6 class="fw-bold fs-lg-1">Dr. Kailash Karande </h6>
-                        <h5 class="ms-2 fw-normal text-400 fs--1">Principle @SKNSCOE</h5>
+                      <div class="col-md-5 col-lg-6 col-xl-7 mb-4 ms-xxl-auto">
+                        <img class="img-fluid" src="public/assets/img/gallery/quotation.png" alt="quote" />
+                        <p class="mt-4 pe-xxl-8">Shital is a highly motivated and dedicated student with a strong passion for learning and self-improvement. Her ability to grasp programming concepts, particularly in C, Python, and web development, is commendable
+                          she is a bright and hardworking student with great potential for success in the field of software development.
+                          </p>
+                        <h6 class="fw-bold fs-lg-1">Prof. Sonali Karche</h6>
+                        <h5 class="ms-2 fw-normal text-400 fs--1">Professor @SKNSCOE</h5>
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item">
+        
+                  <!-- Testimonial 4 -->
+                  <div class="carousel-item" data-bs-interval="4000">
                     <div class="row h-100 align-items-center">
                       <div class="col-auto">
                         <div class="wrapper shadow-square-left-bottom">
                           <div class="card testimonial-card-bg h-100">
-                            <div class="card-body h-100 p-4"><img class="border-klean-gradient" src="public/assets/img/gallery/testimonial.png" alt="testimonials" width="315" /></div>
+                            <div class="card-body h-100 p-4">
+                              <img class="border-klean-gradient" src="public/assets/img/gallery/testimonial.png" alt="testimonial" width="315" />
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-md-5 col-lg-6 col-xl-7 mb-4 ms-xxl-auto"><img class="img-fluid" src="public/assets/img/gallery/quotation.png" alt="testimonials-bg" />
-                        
-                        <p class="mt-4 pe-xxl-8">I just wanted to drop you a little email to say thank you for all your hard work. I'm delighted I chose you as my partner. Your websites are quite simple to edit and maintain, which is fantastic.</p>
-                         
-                        <h6 class="fw-bold fs-lg-1">Dr. Akasaltaf Mulani<h5 class="ms-2 fw-normal text-400 fs--1"> HOD of ENTC Department @SKNSCOE<h5></h6>
+                      <div class="col-md-5 col-lg-6 col-xl-7 mb-4 ms-xxl-auto">
+                        <img class="img-fluid" src="public/assets/img/gallery/quotation.png" alt="quote" />
+                        <p class="mt-4 pe-xxl-8"> As you are currently pursuing your Second Year in ENTC, I would like to extend my heartfelt congratulations for the remarkable initiative you’ve shown in learning multiple programming languages and building impactful projects. 
+                          Your dedication, curiosity, and enthusiasm for innovation at such an early stage are truly commendable. 
+                          Wishing you all the very best in your journey ahead — may your efforts continue to inspire and lead you to great success.</p>
+                        <h6 class="fw-bold fs-lg-1">Dr. Akasaltaf Mulani</h6>
+                        <h5 class="ms-2 fw-normal text-400 fs--1">HOD, ENTC Department @SKNSCOE</h5>
                       </div>
                     </div>
                   </div>
+        
+                  <!-- Testimonial 5 -->
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <div class="row h-100 align-items-center">
+                      <div class="col-auto">
+                        <div class="wrapper shadow-square-left-bottom">
+                          <div class="card testimonial-card-bg h-100">
+                            <div class="card-body h-100 p-4">
+                              <img class="border-klean-gradient" src="public/assets/img/gallery/testimonial.png" alt="testimonial" width="315" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-lg-6 col-xl-7 mb-4 ms-xxl-auto">
+                        <img class="img-fluid" src="public/assets/img/gallery/quotation.png" alt="quote" />
+                        <p class="mt-4 pe-xxl-8">Shital is an extremely driven and committed learner who is passionate about education and personal development. She is a bright and diligent student with a strong chance of succeeding in the software development industry. Her knowledge of programming ideas, especially in C, Python, and web development, is impressive.                        </p>
+                        <h6 class="fw-bold fs-lg-1">Prof.A.D.Harale</h6>
+                        <h5 class="ms-2 fw-normal text-400 fs--1">Professor @SKNSCOE</h5>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Testimonial 6 -->
+                  <div class="carousel-item" data-bs-interval="6000">
+                    <div class="row h-100 align-items-center">
+                      <div class="col-auto">
+                        <div class="wrapper shadow-square-left-bottom">
+                          <div class="card testimonial-card-bg h-100">
+                            <div class="card-body h-100 p-4">
+                              <img class="border-klean-gradient" src="public/assets/img/gallery/sanu.jpg" alt="testimonial" width="315" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-lg-6 col-xl-7 mb-4 ms-xxl-auto">
+                        <img class="img-fluid" src="public/assets/img/gallery/quotation.png" alt="quote" />
+                        <p class="mt-4 pe-xxl-8"> Your knowledge in Full Stack Web Development is truly impressive — we’ve seen your passion shine through in every project you’ve worked on. 
+                          Your dedication, helpful nature inspire us all. Wishing you great success and endless opportunities ahead — your future is definitely bright!</p>
+                        <h6 class="fw-bold fs-lg-1">Miss. Sanika Babar</h6>
+                        <h5 class="ms-2 fw-normal text-400 fs--1">CR & Classmate</h5>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Testimonial 7 -->
+                  <div class="carousel-item" data-bs-interval="7000">
+                    <div class="row h-100 align-items-center">
+                      <div class="col-auto">
+                        <div class="wrapper shadow-square-left-bottom">
+                          <div class="card testimonial-card-bg h-100">
+                            <div class="card-body h-100 p-4">
+                              <img class="border-klean-gradient" src="public/assets/img/gallery/sumit1.jpg" alt="testimonial" width="315" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-lg-6 col-xl-7 mb-4 ms-xxl-auto">
+                        <img class="img-fluid" src="public/assets/img/gallery/quotation.png" alt="quote" />
+                        <p class="mt-4 pe-xxl-8">
+                          An amazing collaborator with a positive attitude and a strong sense of responsibility. Always delivers the best. 
+                          Working together has been an absolute pleasure — always ready to help, communicate effectively, and coordinate tasks smoothly.
+                          A true team player who uplifts everyone around!
+                        </p>
+                        <h6 class="fw-bold fs-lg-1">Mr. Sumit Sangave</h6>
+                        <h5 class="ms-2 fw-normal text-400 fs--1">Teammate</h5>
+                      </div>
+                      
+                    </div>
+                  </div>
+        
+                   
+                  <!-- <div class="carousel-item" data-bs-interval="8000">
+                    <div class="row h-100 align-items-center">
+                      <div class="col-auto">
+                        <div class="wrapper shadow-square-left-bottom">
+                          <div class="card testimonial-card-bg h-100">
+                            <div class="card-body h-100 p-4">
+                              <img class="border-klean-gradient" src="public/assets/img/gallery/testimonial.png" alt="testimonial" width="315" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-lg-6 col-xl-7 mb-4 ms-xxl-auto">
+                        <img class="img-fluid" src="public/assets/img/gallery/quotation.png" alt="quote" />
+                        <p class="mt-4 pe-xxl-8">Innovative thinker and a great team player. Projects are always well-structured and visually stunning.</p>
+                        <h6 class="fw-bold fs-lg-1">Ms. Sneha Kulkarni</h6>
+                        <h5 class="ms-2 fw-normal text-400 fs--1">Creative Head @Mindstorm</h5>
+                      </div>
+                    </div>
+                  </div>
+        
+                  
+                  <div class="carousel-item" data-bs-interval="9000">
+                    <div class="row h-100 align-items-center">
+                      <div class="col-auto">
+                        <div class="wrapper shadow-square-left-bottom">
+                          <div class="card testimonial-card-bg h-100">
+                            <div class="card-body h-100 p-4">
+                              <img class="border-klean-gradient" src="public/assets/img/gallery/testimonial.png" alt="testimonial" width="315" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-lg-6 col-xl-7 mb-4 ms-xxl-auto">
+                        <img class="img-fluid" src="public/assets/img/gallery/quotation.png" alt="quote" />
+                        <p class="mt-4 pe-xxl-8">The attention to detail is impressive. Projects always reflect high standards and originality.</p>
+                        <h6 class="fw-bold fs-lg-1">Prof. Manasi Deshmukh</h6>
+                        <h5 class="ms-2 fw-normal text-400 fs--1">Faculty @Pune University</h5>
+                      </div>
+                    </div>
+                  </div>
+         
+                  <div class="carousel-item" data-bs-interval="10000">
+                    <div class="row h-100 align-items-center">
+                      <div class="col-auto">
+                        <div class="wrapper shadow-square-left-bottom">
+                          <div class="card testimonial-card-bg h-100">
+                            <div class="card-body h-100 p-4">
+                              <img class="border-klean-gradient" src="public/assets/img/gallery/testimonial.png" alt="testimonial" width="315" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-lg-6 col-xl-7 mb-4 ms-xxl-auto">
+                        <img class="img-fluid" src="public/assets/img/gallery/quotation.png" alt="quote" />
+                        <p class="mt-4 pe-xxl-8">A true professional with a great work ethic and deep understanding of client needs. Highly recommended!</p>
+                        <h6 class="fw-bold fs-lg-1">Mr. Rohit Shinde</h6>
+                        <h5 class="ms-2 fw-normal text-400 fs--1">Project Manager @Cognizant</h5>
+                      </div>
+                    </div>
+                  </div> -->
+        
                 </div>
+        
+                <!-- Carousel Indicators -->
                 <div class="row flex-center">
                   <div class="col-auto position-relative z-index-2">
                     <ol class="carousel-indicators me-xxl-7 me-xl-4 me-lg-7">
@@ -661,6 +807,12 @@
                       <li data-bs-target="#carouselTestimonials" data-bs-slide-to="1"></li>
                       <li data-bs-target="#carouselTestimonials" data-bs-slide-to="2"></li>
                       <li data-bs-target="#carouselTestimonials" data-bs-slide-to="3"></li>
+                      <li data-bs-target="#carouselTestimonials" data-bs-slide-to="4"></li>
+                      <li data-bs-target="#carouselTestimonials" data-bs-slide-to="5"></li>
+                      <li data-bs-target="#carouselTestimonials" data-bs-slide-to="6"></li>
+                      <!-- <li data-bs-target="#carouselTestimonials" data-bs-slide-to="7"></li>
+                      <li data-bs-target="#carouselTestimonials" data-bs-slide-to="8"></li>
+                      <li data-bs-target="#carouselTestimonials" data-bs-slide-to="9"></li> -->
                     </ol>
                   </div>
                 </div>
@@ -668,6 +820,8 @@
             </div>
           </div>
         </div>
+        
+        
       </section>
 
 
@@ -760,111 +914,19 @@
         </div>         
       </section>
       <style>
-        .icon-wrapper1 {
-  width: 80px; /* Adjust width */
-  height: 80px; /* Adjust height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f8f9fa; /* Optional background */
-  border-radius: 50%; /* Make it circular */
-  overflow: hidden;
+      #scrollToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000; /* So it appears above other elements */
+  display: none; /* Hidden by default */
 }
 
-.icon-img1 {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain; /* Ensures full image is visible */
+#scrollToTopBtn i {
+  color: white; /* Ensure icon stays white */
 }
-
-        .vertical-button {
-    position: fixed;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    background-color: #4CAF50;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 14px;
-    transition: 0.3s;
-    z-index: 1000;  /* Ensure it stays above all sections */
-    height: auto;   /* Makes the button height smaller */
-    min-height: 50px;  /* Sets a minimum height */
-}
-
-.vertical-button:hover {
-    background-color: #45a049;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-}
-.scroll-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #6f42c1;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 50%;
-    font-size: 20px;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-    display: none; /* Hidden by default */
-  }
-  .scroll-btn:hover {
-    background-color: #5a32a3;
-  }
-
-        /* From Uiverse.io by david-mohseni */ 
-.wrapper {
-  display: flex;
-  gap: 20px; 
-  justify-content: flex-end;
-  flex-direction: column;
-  align-items: center;
-  list-style: none;
-  margin-right: 50%;
-}
-/* From Uiverse.io by CYBWEBALI */ 
-.btn1 {
-  margin-left: 40px;
-  display: grid;
-  place-items: center;
-  background: #e3edf7;
-  padding: 1.4em;
-  border-radius: 10px;
-  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
-	      -6px -6px 10px -1px rgba(255,255,255,0.7);
-  border: 1px solid rgba(0,0,0,0);
-  cursor: pointer;
-  transition: transform 0.5s;
-  gap: 20px;
-  
-}
-
-.btn1:hover {
-  box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
-	      inset -4px -4px 6px -1px rgba(255,255,255,0.7),
-	      -0.5px -0.5px 0px rgba(255,255,255,1),
-	      0.5px 0.5px 0px rgba(0,0,0,0.15),
-	      0px 12px 10px -10px rgba(0,0,0,0.05);
-  border: 1px solid rgba(0,0,0,0.1);
-  transform: translateY(0.5em);
-}
-
-.btn1 svg {
-  transition: transform 0.5s;
-}
-
-.btn1:hover svg {
-  transform: scale(0.9);
-  fill: #f38aea;
-}
+   
+ 
       </style>        
    <!-- EmailJS Script -->
    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
@@ -927,7 +989,7 @@
     </div>
 
     <!-- Scroll to Top Button -->
-    <button id="scrollToTopBtn" class="btn scroll-btn">
+    <button id="scrollToTopBtn" class="btn hover-top btn-glow btn-klean rounded-pill">
         <i class="fas fa-arrow-up"></i>
     </button>
 
